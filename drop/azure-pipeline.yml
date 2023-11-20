@@ -22,7 +22,7 @@ steps:
         npm install -g @angular/cli
         npm install --force
         dotnet run
-      workingDirectory: "$(Build.SourcesDirectory)/SimpleCalculator"
+      workingDirectory: '$https://github.com/syedhasan65/Azure-dotnet/tree/b052c40dadfd8c39ff3e8fcce5862eeeaaf85f70/drop'
     displayName: "DotNet Run"
 
 

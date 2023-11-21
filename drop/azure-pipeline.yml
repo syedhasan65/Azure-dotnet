@@ -32,7 +32,7 @@ steps:
          npm install -g @angular/cli
          npm install --force
          dotnet run
-      workingDirectory: '**/*'
+      workingDirectory: '$(Build.SourcesDirectory)/SimpleCalculator'
     displayName: "DotNet Run"
 
   - task: CopyFiles@2

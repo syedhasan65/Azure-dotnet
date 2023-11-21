@@ -21,7 +21,7 @@ steps:
       script: |
         
         dotnet run
-      workingDirectory: '$(Build.SourcesDirectory)/SimpleCalculator'
+      workingDirectory: '$(Build.SourcesDirectory)/SimpleCalculator/SimpleCalculator.csproj'
     displayName: "DotNet Run"
 
 

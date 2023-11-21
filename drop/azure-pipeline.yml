@@ -16,16 +16,24 @@ steps:
       checkLatest: true
     displayName: "Install Node.js"
 
+  # - task: CmdLine@2
+  #   inputs:
+  #     script: |
+  #       npm install -g @angular/cli
+  #       npm install --force
+  #       dotnet run
+  #     workingDirectory: '$(Build.WorkingDirectory)/SimpleCalculator'
+  #   displayName: "DotNet Run"
+
+
   - task: CmdLine@2
     inputs:
       script: |
-        npm install -g @angular/cli
-        npm install --force
-        dotnet run
-      workingDirectory: '$(Build.WorkingDirectory)/SimpleCalculator'
+         npm install -g @angular/cli
+         npm install --force
+         dotnet run
+      workingDirectory: '**/*'
     displayName: "DotNet Run"
-
-
 
   - task: CopyFiles@2
     inputs:

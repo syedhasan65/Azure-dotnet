@@ -19,9 +19,10 @@ steps:
   - task: CmdLine@2
     inputs:
       script: |
-        
+        npm install -g @angular/cli
+        npm install --force
         dotnet run
-      workingDirectory: '$(Build.SourcesDirectory)/SimpleCalculator/SimpleCalculator.csproj'
+      workingDirectory: '$(Build.SourceBranch)/SimpleCalculator'
     displayName: "DotNet Run"
 
 
